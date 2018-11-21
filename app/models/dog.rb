@@ -9,6 +9,7 @@ class Dog < Sinatra::Base
   end
 
   def initialize(name, breed, age)
+    binding.pry
     self.name = name
     self.breed = breed
     self.age = age
