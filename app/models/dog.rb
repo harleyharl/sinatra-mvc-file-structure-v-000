@@ -1,4 +1,5 @@
 class Dog < Sinatra::Base
+
   attr_accessor :name, :breed, :age
 
   @@all = []
@@ -8,9 +9,9 @@ class Dog < Sinatra::Base
   end
 
   def initialize(name, breed, age)
-    @name = name
-    @breed = breed
-    @age = age
+    self.name = name
+    self.breed = breed
+    self.age = age
     @@all << self
   end
 
